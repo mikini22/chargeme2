@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Charge Me</title>
+    <title>Scholar - Online School HTML5 Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,124 +19,14 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
 
+TemplateMo 586 Scholar
+
+https://templatemo.com/tm-586-scholar
+
+-->
   </head>
-  <style>
-  
-  
-  
-  /* Float four columns side by side */
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-  }
-  /* Float four columns side by side */
-  .flirt {
-    float: left;
-    width: 25%;
-    padding: 0 20px;
-  }
-  
-  /* Remove extra left and right margins, due to padding */
-  .row1 {
-    margin-left: 120px;
-  padding: 10px;
-  }
-  .row2 {
-    margin-left: 120px;
-  padding: 10px;
-  }
-  
-  /* Clear floats after the columns */
-  .row1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  /* Clear floats after the columns */
-  .row2:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .row2{
-      margin-left: 0;
-    }
-    .row1{
-      margin-left: 0;
-    }
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-   
-  }
-  /* Responsive columns */
-    @media screen and (max-width: 600px) {
-    .row2{
-      margin-left: 0;
-    }
-    .row1{
-      margin-left: 0;
-    }
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-    .avatar {
-    width: 30px;
-    height: 60px;
-  }
-  }
-  /* Responsive columns */
-  /* @media screen and (max-width: 600px) {
-    .flirt {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  } */
-  
-  /* Style the counter cards */
-  .card {
-    padding: 16px;
-    text-align: center;
-  }
-  .cod{
-    background-color: rgb(3, 3, 3);
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
-      padding: 5px;
-  
-  
-  }
-  .avatar {
-    width: 82px;
-    height: 60px;
-  }
-  .avatars {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  .karan {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  .flirt {
-    transition: all 0.3s ease-in-out 0s
-  }
-  .flirt:hover {
-    transform: rotateX(360deg);
-  }
- 
-    </style>
 
 <body>
 
@@ -158,25 +48,31 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="main-nav ">
+                <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <h1 class="mx-3">Charge Me</h1>
+                        <h1>Scholar</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Serach Start ***** -->
-                    
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
                     <!-- ***** Serach Start ***** -->
                     <!-- ***** Menu Start ***** -->
-                    <ul class="nav " >
+                    <ul class="nav">
                       <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                      <li class="scroll-to-section"><a href="">About US</a></li>
-                      <li class="scroll-to-section"><a href="">How it works</a></li>
-                      <li class="scroll-to-section"><a href=""><i class="fa-solid fa-globe"></i> EN</a></li>
-                      <li class="scroll-to-section mb-0"><a href=""><button style="background-color: green; border: none; border-radius: 14px; height: fit-content;">Access App</button></a></li>
+                      <li class="scroll-to-section"><a href="#services">Services</a></li>
+                      <li class="scroll-to-section"><a href="#courses">Courses</a></li>
+                      <li class="scroll-to-section"><a href="#team">Team</a></li>
+                      <li class="scroll-to-section"><a href="#events">Events</a></li>
+                      <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
                   </ul>   
-                    <a class='menu-trigger ' >
-                        <span class=" ">Menu</span>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
                     </a>
                     <!-- ***** Menu End ***** -->
                 </nav>
@@ -184,6 +80,7 @@
         </div>
     </div>
   </header>
+  <!-- ***** Header Area End ***** -->
 
   <div class="main-banner" id="top">
     <div class="container">
@@ -192,143 +89,105 @@
           <div class="owl-carousel owl-banner">
             <div class="item item-1">
               <div class="header-text">
-                <h2 class="mt-5">Get charged, anytime, anyday</h2>
-                <p>Introducing a revolutionary charging service that brings the power to you.</p>
+                <span class="category">Our Courses</span>
+                <h2>With Scholar Teachers, Everything Is Easier</h2>
+                <p>Scholar is free CSS template designed by TemplateMo for online educational related websites. This layout is based on the famous Bootstrap v5.3.0 framework.</p>
                 <div class="buttons">
                   <div class="main-button">
-                    <a href="#" class="pt-0" ><i class="fa-brands fa-apple mt-1" style="font-size: 17px;"></i> Coming soon on
-                      <br class="mt-0">
-                    <span class="mt-0 mx-4 mb-0">App Store</span>
-                    </a>
-                    
-                  
+                    <a href="#">Request Demo</a>
                   </div>
-                  <div class="main-button">
-                    <a href="#" class="pt-0" ><i class="fa-brands fa-google-play mt-1" style="font-size: 17px;"></i> <span >Coming soon on</span>
-                      <br class="mt-0">
-                    <span class="mt-2 mx-4 mb-0" style="font-size: 15px;">Google Play</span>
-                    </a>
-                    
-                  
+                  <div class="icon-button">
+                    <a href="#"><i class="fa fa-play"></i> What's Scholar?</a>
                   </div>
                 </div>
               </div>
             </div>
-            
-           
-          
+            <div class="item item-2">
+              <div class="header-text">
+                <span class="category">Best Result</span>
+                <h2>Get the best result out of your effort</h2>
+                <p>You are allowed to use this template for any educational or commercial purpose. You are not allowed to re-distribute the template ZIP file on any other website.</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="#">Request Demo</a>
+                  </div>
+                  <div class="icon-button">
+                    <a href="#"><i class="fa fa-play"></i> What's the best result?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-3">
+              <div class="header-text">
+                <span class="category">Online Learning</span>
+                <h2>Online Learning helps you save the time</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporious incididunt ut labore et dolore magna aliqua suspendisse.</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="#">Request Demo</a>
+                  </div>
+                  <div class="icon-button">
+                    <a href="#"><i class="fa fa-play"></i> What's Online Course?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- <div class="services section" id="services">
+
+  <div class="services section" id="services">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="col-lg-4 col-md-6">
           <div class="service-item">
             <div class="icon">
-              <img src="assets/images/tesla.png" style="width: 50%;" alt="online degrees">
+              <img src="assets/images/service-01.png" alt="online degrees">
             </div>
-            
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/tesla.png" style="width: 50%;" alt="online degrees">
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/tesla.png" style="width: 50%;" alt="online degrees">
-                </div>
-                
+            <div class="main-content">
+              <h4>Online Degrees</h4>
+              <p>Whenever you need free templates in HTML CSS, you just remember TemplateMo website.</p>
+              <div class="main-button">
+                <a href="#">Read More</a>
               </div>
             </div>
-            
           </div>
         </div>
-        
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-02.png" alt="short courses">
+            </div>
+            <div class="main-content">
+              <h4>Short Courses</h4>
+              <p>You can browse free templates based on different tags such as digital marketing, etc.</p>
+              <div class="main-button">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-03.png" alt="web experts">
+            </div>
+            <div class="main-content">
+              <h4>Web Experts</h4>
+              <p>You can start learning HTML CSS by modifying free templates from our website too.</p>
+              <div class="main-button">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div> -->
-  <div class="cod justify-content-center">
-  <div class="row1">
-  <div class="flirt one">
-  <a href=""><img src="assets/images/bmw.png" alt="Chicago"  class="avatar"></a>
-   
-    </div>
-    <div class="flirt one">
-      <a href=""><img src="assets/images/tesla-logo-png-2230.png" alt="Chicago"  class="avatar"></a>
-     
-        </div>
-    
-    <div class="flirt one">
-    <a href=""><img src="assets/images/BYD.png" alt="Chicago"  class="avatar"></a>
-   
-    </div>
-    
-    <div class="flirt one">
-    <img src="assets/images/ford.png" alt="Chicago"  class="avatar ">
-    
-    </div>
-    
-  </div>
   </div>
 
- <img src="assets/images/third.jpg" alt="">
- <h3 class="text-center mt-5 mb-5">Reliable Solution for Energy Delivery</h3>
- <div class="card-group " >
-  <div class="card" style="border: none ;">
-    
-  
-  </div>
-  <div class="card"style="border: none;" >
-    <img src="assets/images/smile.jpg" style="border-radius: 50px;"   class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Convenience</h5>
-      <p class="card-text">Schedule a charging appointment at your preferred location, eliminating the hassle of searching for stations.</p>
-    </div>
-   
-  </div>
-  <div class="card" style="border: none;">
-    <img src="assets/images/recharge.jpg" style="border-radius: 50px;" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Flexibility</h5>
-      <p class="card-text">Choose from various charging options to fit your needs, from quick top-ups to full charges.</p>
-    </div>
-  
-</div>
-</div>
-<div class="card-group">
-  <div class="card" style="border: none ;">
-  
-  </div>
-  <div class="card"style="border: none;">
-    <img src="assets/images/thumbs.jpg" style="border-radius: 50px;"  class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Reliability</h5>
-      <p class="card-text">Experienced and certified experts to deliver safe and efficient charging for your electric vehicle.</p>
-    </div>
-   
-  </div>
-  <div class="card" style="border: none;">
-    <img src="assets/images/charge.jpg" style="border-radius: 50px;" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Sustainability</h5>
-      <p class="card-text">Use a clean and eco-friendly charging solution to reduce your carbon footprint.</p>
-
-    </div>
-  
-  </div>
-</div>
-<center><button style="background-color: #00A63D; color: azure; border: none; border-radius: 5px; width: 200px; height: 70px;" >Book a charge</button></center>
-
-
-
-
-  <!-- <div class="section about-us">
+  <div class="section about-us">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-1">
@@ -360,6 +219,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Why SCHOLAR is the best?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -394,137 +254,380 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <section class="section courses" id="courses" >
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            <h2>Here’s how it works</h2>
-            <h6>Get started in 3 easy steps</h6>
+            <h6>Latest Courses</h6>
+            <h2>Latest Courses</h2>
           </div>
         </div>
       </div>
-     
+      <ul class="event_filter">
+        <li>
+          <a class="is_active" href="#!" data-filter="*">Show All</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".design">Webdesign</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".development">Development</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".wordpress">Wordpress</a>
+        </li>
+      </ul>
       <div class="row event_box">
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
           <div class="events_item">
             <div class="thumb">
-             <center><a href="#"><i class="fa-solid fa-mobile-button" style="color: #00A63D; font-size: larger;"></i></a></center>
-             
+              <a href="#"><img src="assets/images/course-01.jpg" alt=""></a>
+              <span class="category">Webdesign</span>
+              <span class="price"><h6><em>$</em>160</h6></span>
             </div>
             <div class="down-content">
-              <center><span class="author" style="text-align: center;">Download the App</span></center>
-              <center><h6>Our user-friendly app is your charging control center.</h6></center>
+              <span class="author">Stella Blair</span>
+              <h4>Learn Web Design</h4>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  development">
           <div class="events_item">
             <div class="thumb">
-             <center><a href="#"><i class="fa-sharp fa-solid fa-bolt" style="color: #00A63D; font-size: x-large;"></i></a></center>
-             
+              <a href="#"><img src="assets/images/course-02.jpg" alt=""></a>
+              <span class="category">Development</span>
+              <span class="price"><h6><em>$</em>340</h6></span>
             </div>
             <div class="down-content">
-              <center><span class="author" style="text-align: center;">Request charge</span></center>
-              <center><h6>Select your location, desired service, and a time that works for you.</h6></center>
+              <span class="author">Cindy Walker</span>
+              <h4>Web Development Tips</h4>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress">
           <div class="events_item">
             <div class="thumb">
-             <center><a href="#"><i class="fa-solid fa-car-battery" style="color: #00A63D; font-size: x-large;"></i></a></center>
-             
+              <a href="#"><img src="assets/images/course-03.jpg" alt=""></a>
+              <span class="category">Wordpress</span>
+              <span class="price"><h6><em>$</em>640</h6></span>
             </div>
             <div class="down-content">
-              <center><span class="author" style="text-align: center;">Get Charged</span></center>
-              <center><h6>Our truck arrives on time and powers up your vehicle.</h6></center>
+              <span class="author">David Hutson</span>
+              <h4>Latest Web Trends</h4>
             </div>
           </div>
         </div>
-      
-       
-       
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/course-04.jpg" alt=""></a>
+              <span class="category">Development</span>
+              <span class="price"><h6><em>$</em>450</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Stella Blair</span>
+              <h4>Online Learning Steps</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/course-05.jpg" alt=""></a>
+              <span class="category">Wordpress</span>
+              <span class="price"><h6><em>$</em>320</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Sophia Rose</span>
+              <h4>Be a WordPress Master</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/course-06.jpg" alt=""></a>
+              <span class="category">Webdesign</span>
+              <span class="price"><h6><em>$</em>240</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">David Hutson</span>
+              <h4>Full Stack Developer</h4>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  
-  <div class="main-banners" id="top">
+
+  <div class="section fun-facts">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="owl-carousel owl-banner">
-            <div class="item item-1">
-              <div class="header-text">
-                <h2 class="mb-0">Get 24/7 charging delivery service for up to $0.58/KWh</h2>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#" class="pt-2" style="background-color: green;" >Become a member  </a>
-                    
-                  
-                  </div>
-                 
-                 
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
+                   <p class="count-text ">Happy Students</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
+                  <p class="count-text ">Course Hours</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
+                  <p class="count-text ">Employed Students</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter end">
+                  <h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2>
+                  <p class="count-text ">Years Experience</p>
                 </div>
               </div>
             </div>
-            
-           
-          
           </div>
         </div>
       </div>
     </div>
   </div>
-  
 
-
+  <div class="team section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-01.jpg" alt="">
+              <span class="category">UX Teacher</span>
+              <h4>Sophia Rose</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-02.jpg" alt="">
+              <span class="category">Graphic Teacher</span>
+              <h4>Cindy Walker</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-03.jpg" alt="">
+              <span class="category">Full Stack Master</span>
+              <h4>David Hutson</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-04.jpg" alt="">
+              <span class="category">Digital Animator</span>
+              <h4>Stella Blair</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
 
   <div class="section testimonials">
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
           <div class="owl-carousel owl-testimonials">
-          
             <div class="item">
+              <p>“Please tell your friends or collegues about TemplateMo website. Anyone can access the website to download free templates. Thank you for visiting.”</p>
               <div class="author">
-            
+                <img src="assets/images/testimonial-author.jpg" alt="">
+                <span class="category">Full Stack Master</span>
+                <h4>Claude David</h4>
               </div>
             </div>
             <div class="item">
+              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”</p>
               <div class="author">
+                <img src="assets/images/testimonial-author.jpg" alt="">
+                <span class="category">UI Expert</span>
+                <h4>Thomas Jefferson</h4>
+              </div>
+            </div>
+            <div class="item">
+              <p>“Scholar is free website template provided by TemplateMo for educational related websites. This CSS layout is based on Bootstrap v5.3.0 framework.”</p>
+              <div class="author">
+                <img src="assets/images/testimonial-author.jpg" alt="">
+                <span class="category">Digital Animator</span>
+                <h4>Stella Blair</h4>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-5 align-self-center">
           <div class="section-heading">
-            <p style="font-size: x-small;">1. How does the on-demand mobile charging service work?</p>
-            <p class="mt-0 ms-4" style="font-size: xx-small;">Our on-demand service allows you to request a mobile charging unit to your location. Simply use our app or contact our customer support, and we'll bring the charging station to you.</p>
-            <hr class="mt-0 mb-0">
-            <p style="font-size: x-small; color: gray;" class="mt-0">2. What types of charging stations do you offer?</p>
-            <hr class="mt-0 mb-0">
-            <p style="font-size: x-small; color: gray;" class="mt-0">3. Can I subscribe to a plan that suits my charging needs?</p>
-            <hr class="mt-0 mb-0">
-            <p style="font-size: x-small; color: gray;" class="mt-0">4. ⁠Is there a roadside assistance service available?</p>
-            <hr class="mt-0 mb-0">
-            <p style="font-size: x-small; color: gray;" class="mt-0">5.Can I request a mobile charging station anywhere?</p>
+            <h6>TESTIMONIALS</h6>
+            <h2>What they say about us?</h2>
+            <p>You can search free CSS templates on Google using different keywords such as templatemo portfolio, templatemo gallery, templatemo blue color, etc.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="contact-us section mt-0" id="contact">
+  <div class="section events" id="events">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Schedule</h6>
+            <h2>Upcoming Events</h2>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/event-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Web Design</span>
+                    <h4>UI Best Practices</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>16 Feb 2036</h6>
+                  </li>
+                  <li>
+                    <span>Duration:</span>
+                    <h6>22 Hours</h6>
+                  </li>
+                  <li>
+                    <span>Price:</span>
+                    <h6>$120</h6>
+                  </li>
+                </ul>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/event-02.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Front End</span>
+                    <h4>New Design Trend</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>24 Feb 2036</h6>
+                  </li>
+                  <li>
+                    <span>Duration:</span>
+                    <h6>30 Hours</h6>
+                  </li>
+                  <li>
+                    <span>Price:</span>
+                    <h6>$320</h6>
+                  </li>
+                </ul>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/event-03.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Full Stack</span>
+                    <h4>Web Programming</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>12 Mar 2036</h6>
+                  </li>
+                  <li>
+                    <span>Duration:</span>
+                    <h6>48 Hours</h6>
+                  </li>
+                  <li>
+                    <span>Price:</span>
+                    <h6>$440</h6>
+                  </li>
+                </ul>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-us section" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-6  align-self-center">
           <div class="section-heading">
-            <h2 style="color: rgb(15, 14, 14);" class="mt-0 pt-0">Join the Waitlist</h2>
-            <p class="mt-4 mb-5" style="color: rgb(4, 4, 4);">Be among the first to experience the future of EV charging. Enter your email address and phone number to secure your spot.</p>
-           
+            <h6>Contact Us</h6>
+            <h2>Feel free to contact us anytime</h2>
+            <p>Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of charge. You may support us by sharing our website to your friends.</p>
+            <div class="special-offer">
+              <span class="offer">off<br><em>50%</em></span>
+              <h6>Valide: <em>24 April 2036</em></h6>
+              <h4>Special Offer <em>50%</em> OFF!</h4>
+              <a href="#"><i class="fa fa-angle-right"></i></a>
+            </div>
           </div>
         </div>
         <div class="col-lg-6">
@@ -559,236 +662,14 @@
     </div>
   </div>
 
-  <!-- <footer>
+  <footer>
     <div class="container">
-      <div class="col-lg-12 col-md-6 col-sm-12">
-        <p>Copyright © 2024 Charge Me Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="#" rel="nofollow" target="_blank">Mikini</a></p>
+      <div class="col-lg-12">
+        <p>Copyright © 2036 Scholar Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
       </div>
     </div>
-  </footer> -->
-  <footer class="footer-section mt-5">
-    <div class="container">
-        <div class="footer-cta pt-5 pb-5">
-            <div class="row">
-                <div class="col-xl-4 col-md-4 mb-30">
-                    <div class="single-cta">
-                        <div class="cta-text">
-                            <h4>CHARGE ME NOW</h4>
-                            <span>Mobile EV charge that has your back</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4 mb-30">
-                    <div class="single-cta">
-                        <div class="cta-text">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4 mb-30">
-                    <div class="single-cta">
-                        <div class="cta-text">
-                            <h4>Get the app</h4>
-                            <img src="assets/images/download (1).png" class="mt-3" style="width: 50%;" alt="">
-                            <img src="assets/images/download.png" class="mt-1" style="width: 50%;" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-          <div class="footer-menu">
-              <ul>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">How it works</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Contact us</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">FAQs</a></li>
+  </footer>
 
-              </ul>
-          </div>
-      </div>
-     
-    </div>
-    <div class="copyright-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                    <div class="copyright-text">
-                        <p>© 2024 Charge Me Now. All rights reserved.</p>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                  <div class="footer-social-icon">
-                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<style>
-  ul {
-    margin: 0px;
-    padding: 0px;
-}
-.footer-section {
-  background: #1C211F;
-  position: relative;
-}
-.footer-cta {
-  border-bottom: 1px solid #373636;
-}
-.single-cta i {
-  color: #ffffff;
-  font-size: 30px;
-  float: left;
-  margin-top: 8px;
-}
-.cta-text {
-  padding-left: 15px;
-  display: inline-block;
-}
-.cta-text h4 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-.cta-text span {
-  color: #757575;
-  font-size: 15px;
-}
-.footer-content {
-  position: relative;
-  z-index: 2;
-}
-.footer-pattern img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 330px;
-  background-size: cover;
-  background-position: 100% 100%;
-}
-.footer-logo {
-  margin-bottom: 30px;
-}
-.footer-logo img {
-    max-width: 200px;
-}
-.footer-text p {
-  margin-bottom: 14px;
-  font-size: 14px;
-      color: #7e7e7e;
-  line-height: 28px;
-}
-.footer-social-icon span {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 20px;
-}
-.footer-social-icon a {
-  color: #fff;
-  font-size: 16px;
-  margin-right: 15px;
-}
-.footer-social-icon i {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 38px;
-  border-radius: 50%;
-}
-.facebook-bg{
-  background: #8C9E96;
-}
-.twitter-bg{
-  background: #8C9E96;
-}
-.google-bg{
-  background: #8C9E96;
-}
-.footer-widget-heading h3 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  position: relative;
-}
-.footer-widget-heading h3::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  height: 2px;
-  width: 50px;
-  background: #ff5e14;
-}
-.footer-widget ul li {
-  display: inline-block;
-  width: 50%;
-  margin-bottom: 12px;
-}
-.footer-widget ul li a:hover{
-  color: #ff5e14;
-}
-.footer-widget ul li a {
-  color: #878787;
-  text-transform: capitalize;
-}
-.subscribe-form {
-  position: relative;
-  overflow: hidden;
-}
-.subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
-  color: #fff;
-}
-.subscribe-form button {
-    position: absolute;
-    right: 0;
-    background: #ff5e14;
-    padding: 13px 20px;
-    border: 1px solid #ff5e14;
-    top: 0;
-}
-.subscribe-form button i {
-  color: #fff;
-  font-size: 22px;
-  transform: rotate(-6deg);
-}
-.copyright-area{
-  background: #000000;
-  padding: 25px 0;
-}
-.copyright-text p {
-  margin: 0;
-  font-size: 14px;
-  color: #878787;
-}
-.copyright-text p a{
-  color: #ff5e14;
-}
-.footer-menu li {
-  display: inline-block;
-  margin-left: 20px;
-}
-.footer-menu li:hover a{
-  color: #ff5e14;
-}
-.footer-menu li a {
-  font-size: 14px;
-  color: #878787;
-}
-</style>
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
