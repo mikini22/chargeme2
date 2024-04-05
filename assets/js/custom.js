@@ -214,7 +214,5 @@
             });
         });
     }
-	$('body').on("click", function() {
-		$(navbarCollapsible).hide();
-	  });
+
 })(window.jQuery);

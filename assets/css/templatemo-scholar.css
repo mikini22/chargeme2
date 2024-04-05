@@ -111,7 +111,7 @@ Global Styles
 --------------------------------------------- 
 */
 html,
-body,  {
+body {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -921,16 +921,16 @@ Services Style
 --------------------------------------------- 
 */
 
-.services .service-item:hover .icon img {
-  /* margin-top: -10px; */
-}
+/* .services .service-item:hover .icon img {
+  margin-top: -10px;
+} */
 
 .services .service-item {
   margin-top: 0px;
 }
 
-.services .service-item .icon {
-  /* width: 190px;
+/* .services .service-item .icon {
+  width: 190px;
   height: 190px;
   display: inline-block;
   text-align: center;
@@ -939,8 +939,8 @@ Services Style
   border-radius: 50%;
   position: absolute;
   right: 0;
-  top: -95px; */
-}
+  top: -95px;
+} */
 
 .services .service-item .icon img {
   max-width: 100px;
